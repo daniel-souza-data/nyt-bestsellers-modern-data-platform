@@ -30,6 +30,7 @@ airflow/logs/
 # =========================
 .ipynb_checkpoints/
 *.tmp
+*.swp
 
 # =========================
 # Airflow
@@ -43,9 +44,10 @@ airflow/standalone_admin_password.txt
 dbt/target/
 dbt/dbt_packages/
 dbt/logs/
+dbt/profiles.yml
 
 # =========================
-# Snowflake / data files
+# Data files (raw ingestion)
 # =========================
 data/
 *.csv
@@ -53,12 +55,9 @@ data/
 *.parquet
 
 # =========================
-# Secrets
+# Snowflake / credentials
 # =========================
-.env
-.env.*
 secrets.yml
-profiles.yml
 
 # =========================
 # Terraform
@@ -69,12 +68,7 @@ profiles.yml
 crash.log
 
 # =========================
-# VS Code / IDE
+# IDE
 # =========================
 .vscode/
 .idea/
-
-# =========================
-# Mac/Linux temp
-# =========================
-*.swp
